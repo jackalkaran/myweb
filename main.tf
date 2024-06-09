@@ -13,7 +13,7 @@ provider "aws" {
     
 }
 resource "aws_instance" "myec2" {
-  instance_type          = "t2.medium"
+  instance_type          = "t2.small"
   ami                    = data.aws_ami.app_ami.id
   
   
@@ -23,7 +23,7 @@ resource "aws_instance" "myec2" {
 
 }
 resource "aws_instance" "myec2-poll" {
-  instance_type          = "t2.medium"
+  instance_type          = "t2.small"
   ami                    = data.aws_ami.app_ami.id
   
   
